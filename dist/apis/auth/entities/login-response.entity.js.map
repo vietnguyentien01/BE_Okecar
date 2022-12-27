@@ -1,0 +1,1 @@
+{"version":3,"file":"login-response.entity.js","sourceRoot":"","sources":["../../../../src/apis/auth/entities/login-response.entity.ts"],"names":[],"mappings":";;;AASA,MAAa,yBAAyB;IAClC,YAAY,OAAgC;QACxC,IAAI,OAAO,EAAE;YACT,IAAI,CAAC,IAAI,GAAG,OAAO,CAAC,IAAI,CAAA;YACxB,IAAI,CAAC,YAAY,GAAG,OAAO,CAAC,YAAY,CAAA;SAC3C;IACL,CAAC;CACJ;AAPD,8DAOC"}

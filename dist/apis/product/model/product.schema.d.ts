@@ -1,0 +1,30 @@
+import * as Mongo from 'mongoose';
+import { Document } from 'mongoose';
+import { IImage } from 'interfaces/image';
+import { CAR_STATUS, ORIGIN, STATUS } from 'shared/constants';
+export declare class Product extends Document {
+    avatar: IImage[];
+    videoLink: string;
+    carCompanyId: string;
+    vehiclesId: string;
+    versionName: string;
+    year: number;
+    carStatus: CAR_STATUS;
+    origin: ORIGIN;
+    gear: string;
+    fuel: string;
+    color: string;
+    price: number;
+    kilometers: number;
+    vehicleQuality: string;
+    title: string;
+    nameSeller: string;
+    phoneSeller: string;
+    addressSeller: string;
+    userId: string;
+    description: string;
+    location: string;
+    status: STATUS;
+    createdAt: Date;
+}
+export declare const ProductSchema: Mongo.Schema<any, Mongo.Model<any, any, any, any>, any>;

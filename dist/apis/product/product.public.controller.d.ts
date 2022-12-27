@@ -1,0 +1,70 @@
+import { PaginationDto } from '../../shared/common/dto';
+import { ProductService } from './product.service';
+export declare class ProductPublicController {
+    private productService;
+    constructor(productService: ProductService);
+    getList(query: PaginationDto, carStatus: string, origin: string, carCompanyId: string, vehiclesId: string, keyword: string, status: string): Promise<{
+        data: {
+            company: import("../carCompany/entities/car-company.entity").CarCompanyEntity;
+            user: import("../users/entities/user.entity").UserEntity;
+            id: string;
+            avatar: import("../../interfaces/image").IImage[];
+            videoLink: string;
+            carCompanyId: string;
+            vehiclesId: string;
+            versionName: string;
+            year: number;
+            carStatus: import("../../shared/constants").CAR_STATUS;
+            origin: import("../../shared/constants").ORIGIN;
+            gear: string;
+            fuel: string;
+            color: string;
+            price: number;
+            kilometers: number;
+            vehicleQuality: string;
+            title: string;
+            description: string;
+            location: string;
+            nameSeller: string;
+            phoneSeller: string;
+            addressSeller: string;
+            userId: string;
+            status: import("../../shared/constants").STATUS;
+            createdAt: Date;
+        }[];
+        meta: {
+            limit: number;
+            offset: number;
+            total: any;
+            totalPages: number;
+        };
+    }>;
+    getOne(id: string): Promise<{
+        company: import("../carCompany/entities/car-company.entity").CarCompanyEntity;
+        user: import("../users/entities/user.entity").UserEntity;
+        id: string;
+        avatar: import("../../interfaces/image").IImage[];
+        videoLink: string;
+        carCompanyId: string;
+        vehiclesId: string;
+        versionName: string;
+        year: number;
+        carStatus: import("../../shared/constants").CAR_STATUS;
+        origin: import("../../shared/constants").ORIGIN;
+        gear: string;
+        fuel: string;
+        color: string;
+        price: number;
+        kilometers: number;
+        vehicleQuality: string;
+        title: string;
+        description: string;
+        location: string;
+        nameSeller: string;
+        phoneSeller: string;
+        addressSeller: string;
+        userId: string;
+        status: import("../../shared/constants").STATUS;
+        createdAt: Date;
+    }>;
+}
